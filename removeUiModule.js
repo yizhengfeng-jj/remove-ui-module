@@ -1,6 +1,6 @@
 // loader 就是个模块函数
-const { getOptions } = require("loader-utils");
-const validateOptions = require("schema-utils");
+import { getOptions } from "loader-utils";
+import validateOptions from "schema-utils";
 
 const schemaOptions = {
   type: "object",
@@ -15,7 +15,7 @@ const schemaOptions = {
   additionalProperties: false,
 };
 
-module.exports = function (source) {
+export default function (source) {
   const options = getOptions(this);
   const { moduleName = "", diretiveRule } = options || {};
 
@@ -41,4 +41,4 @@ module.exports = function (source) {
   });
 
   this.callback(null, sourceArr.join(" "));
-};
+}
