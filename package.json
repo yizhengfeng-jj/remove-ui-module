@@ -1,6 +1,6 @@
 {
   "name": "remove-ui-module-loader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "custom loader to remove ui module",
   "main": "removeUiModule.js",
   "dependencies": {
