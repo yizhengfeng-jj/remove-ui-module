@@ -1,23 +1,5 @@
 "use strict";
 
-require("core-js/modules/es.array.includes");
-
-require("core-js/modules/es.array.join");
-
-require("core-js/modules/es.array.map");
-
-require("core-js/modules/es.regexp.constructor");
-
-require("core-js/modules/es.regexp.exec");
-
-require("core-js/modules/es.regexp.to-string");
-
-require("core-js/modules/es.string.includes");
-
-require("core-js/modules/es.string.replace");
-
-require("core-js/modules/es.string.split");
-
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -33,21 +15,19 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 // loader 就是个模块函数
 function _default(source) {
-  var options = (0, _loaderUtils.getOptions)(this);
-
-  var _ref = options || {},
-      _ref$moduleName = _ref.moduleName,
-      moduleName = _ref$moduleName === void 0 ? "" : _ref$moduleName,
-      diretiveRule = _ref.diretiveRule;
-
+  const options = (0, _loaderUtils.getOptions)(this);
+  const {
+    moduleName = "",
+    diretiveRule
+  } = options || {};
   (0, _schemaUtils.default)(_options.default, options);
-  var sourceArr = source.split(" ");
-  sourceArr = sourceArr.map(function (simple) {
+  let sourceArr = source.split(" ");
+  sourceArr = sourceArr.map(simple => {
     // 在用,号隔开，防止并行的样式
-    var simpleArr = simple.split(",");
-    simpleArr = simpleArr.map(function (item) {
+    let simpleArr = simple.split(",");
+    simpleArr = simpleArr.map(item => {
       if (item.includes(moduleName)) {
-        var rule = new RegExp(diretiveRule, "g");
+        const rule = new RegExp(diretiveRule, "g");
         item = item.replace(diretiveRule ? rule : /_.{8}/g, "");
       }
 

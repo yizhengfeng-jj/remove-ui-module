@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var schemaOptions = {
+const schemaOptions = {
   type: "object",
   properties: {
     moduleName: {
