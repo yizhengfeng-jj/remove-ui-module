@@ -1,5 +1,5 @@
 {
-  "name": "remove-ui-module-loader",
+  "name": "remove-ui-hash-loader",
   "version": "3.0.3",
   "description": "custom loader to remove ui module",
   "main": "./dist/cjs.js",
