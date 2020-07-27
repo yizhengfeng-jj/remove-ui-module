@@ -1,0 +1,29 @@
+{
+  "name": "remove-ui-module-loader",
+  "version": "1.0.0",
+  "description": "custom loader to remove ui module",
+  "main": "removeUiModule.js",
+  "dependencies": {
+    "loader-utils": "^2.0.0",
+    "schema-utils": "^2.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yizhengfeng-jj/remove-ui-module.git"
+  },
+  "keywords": [
+    "css-module",
+    "webpack",
+    "loader"
+  ],
+  "author": "json",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yizhengfeng-jj/remove-ui-module/issues"
+  },
+  "homepage": "https://github.com/yizhengfeng-jj/remove-ui-module#readme"
+}
