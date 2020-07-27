@@ -1,6 +1,6 @@
 {
   "name": "remove-ui-hash-loader",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "custom loader to remove ui module",
   "main": "./dist/cjs.js",
   "dependencies": {
