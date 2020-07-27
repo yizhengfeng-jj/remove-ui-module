@@ -4,11 +4,14 @@
   "description": "custom loader to remove ui module",
   "main": "./dist/bundle.js",
   "dependencies": {
+    "@babel/cli": "^7.10.5",
     "@babel/core": "^7.10.5",
     "@babel/polyfill": "^7.10.4",
     "@babel/preset-env": "^7.10.4",
+    "babel-cli": "^6.26.0",
     "babel-loader": "^8.1.0",
     "core-js": "^3.6.5",
+    "cross-env": "^7.0.2",
     "loader-utils": "^2.0.0",
     "schema-utils": "^2.7.0",
     "webpack": "^4.44.0",
@@ -16,7 +19,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "build": "webpack --config webpack.prod.js"
+    "build": "cross-env NODE_ENV=production babel src -d dist --copy-files"
   },
   "repository": {
     "type": "git",

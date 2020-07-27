@@ -1,19 +1,7 @@
 // loader 就是个模块函数
 import { getOptions } from "loader-utils";
 import validateOptions from "schema-utils";
-
-const schemaOptions = {
-  type: "object",
-  properties: {
-    moduleName: {
-      type: "string",
-    },
-    diretiveRule: {
-      type: "object",
-    },
-  },
-  additionalProperties: false,
-};
+import schemaOptions from "./options";
 
 export default function (source) {
   const options = getOptions(this);
