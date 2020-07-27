@@ -2,7 +2,7 @@
   "name": "remove-ui-module-loader",
   "version": "3.0.0",
   "description": "custom loader to remove ui module",
-  "main": "./dist/bundle.js",
+  "main": "./dist/cjs.js",
   "dependencies": {
     "@babel/cli": "^7.10.5",
     "@babel/core": "^7.10.5",
