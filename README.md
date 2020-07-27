@@ -1,6 +1,6 @@
 ### 介绍
 
-remove-ui-module 这个插件是用来解决 css-module 把第三方 ui 库的样式也 module 了
+remove-ui-module 这个插件是用来解决 css-module 把第三方 ui 库的样式也 hash的情况
 
 ### options
 npm 
