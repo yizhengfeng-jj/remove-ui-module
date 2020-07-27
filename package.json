@@ -1,6 +1,6 @@
 {
   "name": "remove-ui-module-loader",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "description": "custom loader to remove ui module",
   "main": "./dist/bundle.js",
   "dependencies": {
