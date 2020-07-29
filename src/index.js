@@ -3,7 +3,7 @@ import { getOptions } from "loader-utils";
 import validateOptions from "schema-utils";
 import schemaOptions from "./options";
 
-export default function (source) {
+export default function removeUiHashLoader(source) {
   const options = getOptions(this);
   const { moduleName = "", diretiveRule } = options || {};
 

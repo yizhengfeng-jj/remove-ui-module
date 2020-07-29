@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = _default;
+exports.default = removeUiHashLoader;
 
 var _loaderUtils = require("loader-utils");
 
@@ -14,7 +14,7 @@ var _options = _interopRequireDefault(require("./options"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // loader 就是个模块函数
-function _default(source) {
+function removeUiHashLoader(source) {
   const options = (0, _loaderUtils.getOptions)(this);
   const {
     moduleName = "",

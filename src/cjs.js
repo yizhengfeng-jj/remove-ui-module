@@ -1,3 +1,3 @@
-import loader from "./index.js";
+const loader = require("./index");
 
 module.exports = loader.default;
