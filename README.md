@@ -7,7 +7,7 @@ npm
 - moduleName: 这个是 ui 库的前缀如 el-
 - diretiveRule: 自定义的后缀名和 css-module 保持对应，默认是\_.{8}
 
-### expamle
+### example
 
 ```javascript
  {
